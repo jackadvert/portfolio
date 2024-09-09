@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: black;
+}
+html{
+    scroll-behavior: smooth;
+}
+    .imagess{
+        background: black;
+        margin: auto;
+        margin-top: 5px;
+        width: 80vw;
+        height: 100%; 
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    .imagess .img{
+     width: 100%;
+     height: 100%;
+     padding: 0 1rem;
+     object-fit: contain;
+
+    }
+
+    .images{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(175px , 622px));
+ grid-auto-rows: minmax(100px, auto); 
+ gap: 5px;
+ justify-items: center;
+ align-items:center ;
+ place-content: center;
+ background: black;
+place-items: center;
+grid-template-areas: "img-1 img-2 " "img-3 img-4 " "img-5 img-6 " "img-7 img-8 " "img-9 img-10" "img-11 img-12" "img-13 img-13" ;
+}
+.img-1{
+    grid-area: img-1;
+    width: 100%;
+ }
+ .img-2{
+    grid-area: img-2;
+    width: 100%;
+   
+ }
+ .img-3{
+ grid-area: img-3;
+ width: 100%;
+ }
+ .img-4{
+ grid-area: img-4;
+ width: 100%;
+ }
+ .img-5{
+ grid-area: img-5;
+ width: 100%;
+ }
+ .img-6{
+ grid-area: img-6;
+ width: 100%;
+ }
+ .img-7{
+ grid-area: img-7;
+ width: 100%;
+ height: 100%;
+ }
+ .img-8{
+ grid-area: img-8;
+ width: 100%;
+ }
+ .img-9{
+ grid-area: img-9;
+ width: 100%;
+ height: 100%;
+ }
+ .img-10{
+ grid-area: img-10;
+ width: 100%;
+ 
+ }
+ .img-11{
+    grid-area: img-11;
+    width: 100%;
+    }
+    .img-12{
+    grid-area: img-12;
+    width: 100%;
+    height: 100%;
+    }
+    .img-13{
+    grid-area: img-13;
+    width: 100%;
+    }
+
+
+     /* for tablet */
+     @media screen and (min-device-width: 481px) and (max-device-width: 900px) { 
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: white;
+}
+.imagess{
+    width: 100%;
+    background: white;
+    gap: 5px;
+    padding: 0;
+   }
+   .images{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(175px , 1fr));
+ grid-auto-rows: minmax(100px, auto); 
+}
+}
+
+    /* for mobile  */
+    @media only screen and (max-width: 600px) {
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: white;
+}
+   .imagess{
+    width: 100%;
+    background: white;
+    padding: 0;
+    gap: 5px;
+   }
+   .imagess .img{
+    padding: 0 ;
+    
+   }
+   .images{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(175px , 1fr));
+ grid-auto-rows: minmax(100px, auto); 
+}
+    }
+
+
+    </style>
+    <title>MSC Branding</title>
+</head>
+<body> 
+    <div class="imagess">
+        <img class="img" data-aos="zoom-in" src="./MSC Branding/Artboard 1.jpg" alt="">
+        <img class="img" data-aos="zoom-in" src="./MSC Branding/Artboard 2.jpg" alt="">
+        <img class="img" data-aos="zoom-in" src="./MSC Branding/Artboard 3.jpg" alt="">
+        <img class="img" data-aos="zoom-in" src="./MSC Branding/Artboard 4.jpg" alt="">
+    </div>
+    <div class="images">
+        <img class="img-1" data-aos="slide-up" src="./MSC Branding/Artboard 1 (6).jpg" alt="">
+        <img class="img-2" data-aos="fade-left" src="./MSC Branding/Artboard 2 (4).jpg" alt="">
+        <img class="img-3" data-aos="fade-right" src="./MSC Branding/Artboard 3 (1).jpg" alt="">
+        <img class="img-4" data-aos="fade-left" src="./MSC Branding/Artboard 4 (1).jpg" alt="">
+        <img class="img-5" data-aos="fade-right" src="./MSC Branding/Artboard 5.jpg" alt="">
+        <img class="img-6" data-aos="fade-left" src="./MSC Branding/Artboard 6 copy.jpg" alt="">
+        <img class="img-7" data-aos="fade-right" src="./MSC Branding/Artboard 7.jpg" alt="">
+        <img class="img-8" data-aos="fade-left" src="./MSC Branding/Artboard 8.jpg" alt="">
+        <img class="img-9" data-aos="fade-right" src="./MSC Branding/Artboard 9.jpg" alt="">
+        <img class="img-10" data-aos="fade-left" src="./MSC Branding/Artboard 10.jpg" alt="">
+        <img class="img-11" data-aos="fade-right" src="./MSC Branding/Artboard 11.jpg" alt="">
+        <img class="img-12" data-aos="fade-left" src="./MSC Branding/Artboard 12.jpg" alt="">
+        <img class="img-13" data-aos="zoom-in" src="./MSC Branding/Artboard 13.jpg" alt="">
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1100,
+      });
+    </script>
+</body>
+</html>

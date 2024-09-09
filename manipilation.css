@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: black;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.images{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(175px , 500px));
+ grid-auto-rows: minmax(100px, auto); 
+ gap: 5px;
+ justify-items: center;
+ align-items:center ;
+ place-content: center;
+place-items: center;
+grid-template-areas: "img-1 img-1" "img-2 img-3" "img-4 img-5" "img-6 img-7" "img-8 img-9" "img-10 img-10";
+}
+.img-1{
+    grid-area: img-1;
+    width: 100%;
+ }
+ .img-2{
+    grid-area: img-2;
+    width: 100%;
+   
+ }
+ .img-3{
+ grid-area: img-3;
+ width: 100%;
+ }
+ .img-4{
+ grid-area: img-4;
+ width: 100%;
+ }
+ .img-5{
+ grid-area: img-5;
+ width: 100%;
+ }
+ .img-6{
+ grid-area: img-6;
+ width: 100%;
+ }
+ .img-7{
+ grid-area: img-7;
+ width: 100%;
+ }
+ .img-8{
+ grid-area: img-8;
+ width: 100%;
+ }
+ .img-9{
+ grid-area: img-9;
+ width: 100%;
+ }
+ .img-10{
+ grid-area: img-10;
+ width: 100%;
+ }

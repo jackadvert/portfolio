@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="animation.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
+    <style>
+      *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: gray;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.images{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(175px , 500px));
+ grid-auto-rows: minmax(100px, auto); 
+ gap: 10px;
+ justify-items: center;
+ align-items:center ;
+ place-content: center;
+ background: gray;
+place-items: center;
+ grid-template-areas: "vid-1" "vid-2" "vid-3" "vid-4" "vid-5" "vid-6" "vid-7"  ;
+}
+
+.vid-1{
+    width: 100%;
+    grid-area: vid-1;
+    
+}
+.vid-2{
+    width: 100%;
+    grid-area: vid-2;
+}
+.vid-3{
+    width: 100%;
+    grid-area: vid-3;
+}
+.vid-4{
+    width: 100%;
+    grid-area: vid-4;
+}
+.vid-5{
+    width: 100%;
+    grid-area: vid-5;
+}
+.vid-6{
+    width: 100%;
+    grid-area: vid-6;
+}
+.vid-7{
+    width: 100%;
+    grid-area: vid-7;
+}
+    </style>
+
+    <title>3D Animation</title>
+</head>
+<body>
+    <div class="images">
+ <video class="vid-1" data-aos="zoom-in" controls src="./3d animation/bansal final render.mp4"></video>
+ <video class="vid-2" data-aos="zoom-in" controls src=".//3d animation/Comp 1.mp4"></video>
+ <video class="vid-3" data-aos="zoom-in" controls src=".//3d animation/FAT FROG WITH PROMOM TRANS.mp4"></video>
+ <video class="vid-4" data-aos="zoom-in" controls src=".//3d animation/kharri building comp.mp4"></video>
+ <video class="vid-5" data-aos="zoom-in" controls src=".//3d animation/madhu boxes.mp4"></video>
+ <video class="vid-6" data-aos="zoom-in" controls src=".//3d animation/reveal.mp4"></video>
+ <video class="vid-7" data-aos="zoom-in" controls src=".//3d animation/text with soundd.mp4"></video>    
+    </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1100,
+
+
+    });
+  </script>
+</body>
+</html>
